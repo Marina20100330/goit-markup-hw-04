@@ -229,7 +229,15 @@ section {
 }
 
 .sect-1 {
-  background-color: #2e2f42;
+  background-color: rgba(46, 47, 66, 0.7);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
   height: auto;
   display: flex;
@@ -339,8 +347,10 @@ section {
   background-color: #ffffff;
   flex-direction: column;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 64px;
   gap: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .sect-portfolio {
   display: flex;
@@ -378,4 +388,59 @@ section {
 .footer {
   display: block;
   margin-left: 156px;
+}
+.icons-merit {
+  border: #8e8f99 1px solid;
+  background-color: #f4f4fd;
+  padding: 24px 100px 24px 100px;
+  margin-bottom: 8px;
+}
+.our-team-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.our-team-icon {
+  width: 40px;
+  height: 40px;
+}
+.team-icons {
+  display: flex;
+  border: 1px solid #8e8f99;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: #4d5ae5;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: -50px;
+}
+.team-icon {
+  fill: #f4f4fd;
+}
+
+.team-icons:hover,
+.team-icons:focus {
+  background-color: #404bbf;
+}
+.foot-icons {
+  display: flex;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: #4d5ae5;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: -48px;
+}
+.footer-icons-text {
+  display: flex;
+  margin-left: 500px;
+  gap: 8px;
+}
+.foot-title {
+  color: #ffffff;
+  margin-top: -90px;
 }
